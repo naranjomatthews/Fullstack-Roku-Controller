@@ -1,0 +1,56 @@
+{
+  "appName": "MyCH5UI",
+  "appType": "ch5",
+  "description": "My CH5 HTML UI for Roku Remote",
+  "version": "1.0.0",
+  "startPage": "index.html",
+  "uiType": "html",
+    "files": [
+    "index.html",
+    "settings.html"
+  ],
+
+  "joinMap": {
+    "ip_address": { "joinNumber": 1, "joinType": "serial" },
+    "ip_address_label": { "joinNumber": 2, "joinType": "serial" },
+
+    "language_display": { "joinNumber": 3, "joinType": "serial" },
+
+    "rewind_button": { "joinNumber": 16, "joinType": "digital" },
+    "pause_button": { "joinNumber": 17, "joinType": "digital" },
+    "forward_button": { "joinNumber": 18, "joinType": "digital" },
+    "info_button": { "joinNumber": 19, "joinType": "digital" },
+    "instant_replay_button": { "joinNumber": 20, "joinType": "digital" },
+    "back_button": { "joinNumber": 21, "joinType": "digital" },
+    "home_button": { "joinNumber": 22, "joinType": "digital" },
+    "up_button": { "joinNumber": 23, "joinType": "digital" },
+    "down_button": { "joinNumber": 24, "joinType": "digital" },
+    "left_button": { "joinNumber": 25, "joinType": "digital" },
+    "right_button": { "joinNumber": 26, "joinType": "digital" },
+    "select_button": { "joinNumber": 27, "joinType": "digital" },
+
+    "shortcut_1_click": { "joinNumber": 28, "joinType": "digital" },
+    "shortcut_2_click": { "joinNumber": 29, "joinType": "digital" },
+    "shortcut_3_click": { "joinNumber": 30, "joinType": "digital" },
+    "enter_button": { "joinNumber": 31, "joinType": "digital" },
+
+    "logger_1": { "joinNumber": 8, "joinType": "serial" },
+    "logger_2": { "joinNumber": 9, "joinType": "serial" },
+    "logger_3": { "joinNumber": 10, "joinType": "serial" },
+    "logger_4": { "joinNumber": 11, "joinType": "serial" },
+    "logger_5": { "joinNumber": 12, "joinType": "serial" },
+    "logger_6": { "joinNumber": 13, "joinType": "serial" },
+    "logger_7": { "joinNumber": 14, "joinType": "serial" },
+    "logger_8": { "joinNumber": 15, "joinType": "serial" },
+    "logger_9": { "joinNumber": 16, "joinType": "serial" },
+    "logger_10": { "joinNumber": 17, "joinType": "serial" },
+
+    "tubi_icon": { "joinNumber": 4, "joinType": "serial" },
+    "youtube_icon": { "joinNumber": 5, "joinType": "serial" },
+    "fish_icon": { "joinNumber": 6, "joinType": "serial" },
+
+    "shortcut_name_1": { "joinNumber": 40, "joinType": "serial" },
+    "shortcut_name_2": { "joinNumber": 41, "joinType": "serial" },
+    "shortcut_name_3": { "joinNumber": 42, "joinType": "serial" }
+  }
+}
