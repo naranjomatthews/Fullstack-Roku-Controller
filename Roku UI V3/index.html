@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index.html"</title>
+    <link rel="stylesheet" href="./src/css/RokuStyle.css">
+    <link rel="stylesheet" href="dist\css\ch5-theme.css">
+    <link rel="stylesheet" href="node_modules\@crestron\ch5-theme\output\themes\light-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  :root {
+    --theme-ch5-dpad--default-color: #53565A;
+    --theme-ch5-dpad--default-pressed-background-color: #3b3c3e;
+    --theme-ch5-dpad--default-pressed-color: white;
+  }
+</style>
+
+
+    </head>
+    <body class="light-mode">
+
+        <div id="Title2">
+      <h1><span id="main-title" class="highlight">Roku Remote</span></h1>
+        </div>
+
+        <div id="Settings_Shortcut">
+        <a href="settings.html">
+        <button>⚙</button>
+        </a>
+        </div>
+
+
+        <img id="PDI_Logo" src="Power-Design-Logo-White.png" alt="PDI Logo" />
+
+        <div id="IP_Address_Handler">
+            <input type="text" id="IP_Address_Label" placeholder="Currently not connected" readonly />
+                <input type="text" id="Language_Label" placeholder="Language set to English by default" readonly />
+        </div>
+        
+            <div id="Basic_Buttons">
+           
+                <button type="button" id="Back_Button">↩</button>
+                <button type="button" id="Home_Button">🏠︎</button>
+          
+            </div>
+             <div id="dpad">
+                 <ch5-dpad
+                 id="ch5-dpad"
+                 type="secondary"
+                    shape="plus"
+                    stretch="height"
+                    sendeventonclickstart="23">
+                    <ch5-dpad-button  key="up" iconclass="fas fa-caret-up" ></ch5-dpad-button>
+                    <ch5-dpad-button  key="down" iconclass="fas fa-caret-down" ></ch5-dpad-button>
+                    <ch5-dpad-button  key="left" iconclass="fas fa-caret-left" ></ch5-dpad-button>
+                    <ch5-dpad-button  key="right" iconclass="fas fa-caret-right" ></ch5-dpad-button>
+                    <ch5-dpad-button  key="center" ></ch5-dpad-button>
+                </ch5-dpad>
+                </div>
+            <!--
+            <div id="dpad">
+                <button type="button" id="Up">▲</button>
+                <button type="button" id="Down">▼</button>
+                <button type="button" id="Left">◀</button>
+                <button type="button" id="Right">▶</button>
+                <button type="button" id="Select">●</button>
+            </div>
+        -->
+   
+
+            <div id="Advanced_Buttons">
+                <button type="button" id="Info_Button">✱</button>
+                <button type="button" id="Instant_Replay_Button">⭯</button>
+            </div>
+
+            <div id="Control_Buttons">
+                <button type="button" id="Rewind_Button">⏮</button>
+                <button type="button" id="Pause_Button">⏯</button>
+                <button type="button" id="Forward_Button">⏭</button>
+            </div>
+    
+
+
+         <div id="Shortcuts">
+            <div id="Shortcut1">
+                <img id="Tubi_Icon" src="41468.png" alt="Tubi Icon" />
+                <button type="button" id="Shortcut_Button_1"></button>
+                  <input type="text" id="Shortcut_Name_1" readonly />
+            </div>
+
+            <div id="Shortcut2">
+                <img id="YouTube_Icon" src="837.png" alt="YouTube Icon"/>
+                <button type="button" id="Shortcut_Button_2"></button>
+                  <input type="text" id="Shortcut_Name_2" readonly />
+            </div>
+
+            <div id="Shortcut3">
+                <img id="Fish_Icon" src="758888.png" alt="Fish Icon" />
+                <button type="button" id="Shortcut_Button_3"></button>
+                 <input type="text" id="Shortcut_Name_3" readonly />
+            </div>
+         </div>
+
+           <!--Import the crestron libraries-->
+          <script src="./index.js"></script>
+          <script src="./cr-com-lib.js"></script>
+          <script src="node_modules\@crestron\ch5-crcomlib\build_bundles\umd\@types\ch5-dpad"></script>
+
+            
+          <script type="module" src="./src/webxpanel.js"></script>
+                     <script type="module" src="./src/Roku.js"></script>
+          <script type="module" src="./src/Theme.js"></script>
+    </body>
+    <!--
+    <script>
+document.getElementById("themeSelect").addEventListener("change", function () {
+  const selectedTheme = this.value;
+  document.body.classList.remove("light-mode", "dark-mode");
+  document.body.classList.add(selectedTheme + "-mode");
+});
+</script>
+</html>
+-->
+</html>

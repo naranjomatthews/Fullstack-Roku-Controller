@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index.html"</title>
+    <link rel="stylesheet" href="./src/css/RokuStyle.css">
+    </head>
+    <body>
+        <h1>Roku Remote</h1>
+
+        <img id="PDI_Logo" src="White_PDI_Logo.png" alt="PDI Logo" />
+        
+            <div id="Basic_Buttons">
+                <button type="button" id="Back_Button">Back</button>
+                <button type="button" id="Home_Button">Home</button>
+                <button type="button" id="Enter_Button">Enter</button>
+            </div>
+
+            <div id="dpad">
+                <button type="button" id="Up">▲</button>
+                <button type="button" id="Down">▼</button>
+                <button type="button" id="Left">◀</button>
+                <button type="button" id="Right">▶</button>
+                <button type="button" id="Select">●</button>
+            </div>
+
+            <div id="IP_Address_Handler">
+                <input type="text" id="Textinput_IP_Address" placeholder="Enter Roku IP" />
+                <input type="text" id="IP_Address_Label" readonly />
+            </div>
+
+            <div id="Logger">
+                <textarea id="Logger_Text_Display_1" rows="10" cols="50" readonly></textarea>
+                <textarea id="Logger_Text_Display_2" rows="10" cols="50" readonly></textarea>
+                <textarea id="Logger_Text_Display_3" rows="10" cols="50" readonly></textarea>
+                <textarea id="Logger_Text_Display_4" rows="10" cols="50" readonly></textarea>
+                <textarea id="Logger_Text_Display_5" rows="10" cols="50" readonly></textarea>
+                <textarea id="Logger_Text_Display_6" rows="10" cols="50" readonly></textarea>
+                <textarea id="Logger_Text_Display_7" rows="10" cols="50" readonly></textarea>
+                <textarea id="Logger_Text_Display_8" rows="10" cols="50" readonly></textarea>
+                <textarea id="Logger_Text_Display_9" rows="10" cols="50" readonly></textarea>
+                <textarea id="Logger_Text_Display_10" rows="10" cols="50" readonly></textarea>
+            </div>
+
+            <div id="Shortcuts">
+                <input type="text" id="Shortcut_Name_1" readonly />
+                <input type="text" id="Shortcut_Name_2" readonly />
+                <input type="text" id="Shortcut_Name_3" readonly />
+                <img id="Tubi_Icon" src="" alt="Tubi Icon" />
+                <img id="YouTube_Icon" src="" alt="YouTube Icon" />
+                <img id="Fish_Icon" src="" alt="Fish Icon" />
+                <button type="button" id="Shortcut_Button_1"></button>
+                <button type="button" id="Shortcut_Button_2"></button>
+                <button type="button" id="Shortcut_Button_3"></button>
+            </div>
+
+          <!--Import the crestron libraries-->
+          <script src="./index.js"></script>
+          <script src="./cr-com-lib.js"></script>
+
+            
+          <script type="module" src="./src/webxpanel.js"></script>
+          <script type="module" src="./src/Roku.js"></script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index.html"</title>
+    <link rel="stylesheet" href="./src/css/Settings.css">
+    </head>
+    <body class="light-mode">
+
+      <div id="Title">
+       <h1><span id="settings-title" class="highlight2">Settings</span></h1>
+      </div>
+
+   <div id="Home_Container">
+    <div id="Home_Shortcut">
+        <img src="home-icon-white-11.jpg" id="Home_Image">
+        <a href="index.html">
+        <button id="Home_Icon"></button>
+        </a>
+        </div>
+        </div>
+
+ <div id="Select_Menus">
+    <form id="themeForm" action="/submit-endpoint" method="POST">
+      <select name="theme" id="themeSelect">
+       <option id="opt-theme-default" value="default">Select a Theme</option>
+        <option id="opt-light" value="light">Light Mode</option>
+        <option id="opt-dark" value="dark">Dark Mode</option>
+      </select>
+    </form>
+
+
+    <form id="langForm" action="/submit-endpoint" method="POST">
+      <select name="lang" id="langSelect">
+       <option id="opt-language-default" value="default">Select a Language</option>
+        <option id="opt-english" value="English">English</option>
+        <option id="opt-spanish" value="Spanish">Spanish</option>
+      </select>
+    </form>
+</div>
+
+<div id="IP_Address_Input">
+  
+  <input type="text" id="Textinput_IP_Address" placeholder="Enter Roku IP" />
+  <button type="button" id="Enter_Button">Enter</button>
+</div>
+
+     <div id="Logger">
+                <textarea id="Logger_Text_Display_1" rows="10" cols="30" readonly></textarea>
+                <textarea id="Logger_Text_Display_2" rows="10" cols="30" readonly></textarea>
+                <textarea id="Logger_Text_Display_3" rows="10" cols="30" readonly></textarea>
+                <textarea id="Logger_Text_Display_4" rows="10" cols="30" readonly></textarea>
+                <textarea id="Logger_Text_Display_5" rows="10" cols="30" readonly></textarea>
+                <textarea id="Logger_Text_Display_6" rows="10" cols="30" readonly></textarea>
+                <textarea id="Logger_Text_Display_7" rows="10" cols="30" readonly></textarea>
+                <textarea id="Logger_Text_Display_8" rows="10" cols="30" readonly></textarea>
+                <textarea id="Logger_Text_Display_9" rows="10" cols="30" readonly></textarea>
+                <textarea id="Logger_Text_Display_10" rows="10" cols="30" readonly></textarea>
+            </div>
+
+
+                         <img id="PDI_Logo" src="Power-Design-Logo-White.png" alt="PDI Logo" />
+
+
+  <script src="./index.js"></script>
+          <script src="./cr-com-lib.js"></script>
+
+            
+          <script type="module" src="./src/webxpanel.js"></script>
+                 <script type="module" src="./src/Roku.js"></script>
+          <script type="module" src="./src/Theme.js"></script>
+</body>
+</html>
